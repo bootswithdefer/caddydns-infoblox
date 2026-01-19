@@ -4,9 +4,13 @@ import (
 	infoblox "github.com/bootswithdefer/libdns-infoblox"
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"go.uber.org/zap"
 )
 
-type Provider struct{ *infoblox.Provider }
+type Provider struct {
+	*infoblox.Provider
+	logger *zap.Logger
+}
 
 func (Provider) CaddyModule() caddy.ModuleInfo {
 	return caddy.ModuleInfo{
@@ -20,10 +24,19 @@ func init() {
 }
 
 func (p *Provider) Provision(ctx caddy.Context) error {
+	p.logger = ctx.Logger()
+	p.logger.Info("provisioning Infoblox DNS provider")
+
 	p.Provider.Host = caddy.NewReplacer().ReplaceAll(p.Provider.Host, "")
 	p.Provider.Version = caddy.NewReplacer().ReplaceAll(p.Provider.Version, "")
 	p.Provider.Username = caddy.NewReplacer().ReplaceAll(p.Provider.Username, "")
 	p.Provider.Password = caddy.NewReplacer().ReplaceAll(p.Provider.Password, "")
+
+	p.logger.Info("Infoblox DNS provider configured",
+		zap.String("host", p.Provider.Host),
+		zap.String("version", p.Provider.Version),
+		zap.String("username", p.Provider.Username))
+
 	return nil
 }
 
@@ -68,6 +81,11 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	if p.Provider.Host == "" || p.Provider.Version == "" || p.Provider.Username == "" || p.Provider.Password == "" {
 		return d.Err("missing config!")
 	}
+
+	if p.logger != nil {
+		p.logger.Info("Infoblox configuration parsed from Caddyfile")
+	}
+
 	return nil
 }
 

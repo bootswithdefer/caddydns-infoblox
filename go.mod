@@ -5,6 +5,7 @@ go 1.25
 require (
 	github.com/bootswithdefer/libdns-infoblox v1.0.2
 	github.com/caddyserver/caddy/v2 v2.10.2
+	go.uber.org/zap v1.27.1
 )
 
 require (
@@ -32,7 +33,6 @@ require (
 	github.com/zeebo/blake3 v0.2.4 // indirect
 	go.uber.org/mock v0.6.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	go.uber.org/zap v1.27.1 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	golang.org/x/crypto v0.47.0 // indirect
