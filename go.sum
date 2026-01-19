@@ -8,6 +8,8 @@ github.com/bootswithdefer/libdns-infoblox v1.0.4 h1:l2FZgWS+Lg+BY1P1FNOWq6k1oYuy
 github.com/bootswithdefer/libdns-infoblox v1.0.4/go.mod h1:/98mdNH+dT1jkd3VESsL35ccI9zBw7IVfQ09EU/bI8I=
 github.com/bootswithdefer/libdns-infoblox v1.0.5 h1:O0LCeEAut80qL0QpjeXqge431RhO8jBoVwYsrx8+L0E=
 github.com/bootswithdefer/libdns-infoblox v1.0.5/go.mod h1:/98mdNH+dT1jkd3VESsL35ccI9zBw7IVfQ09EU/bI8I=
+github.com/bootswithdefer/libdns-infoblox v1.0.6 h1:YgdYjRcd9VSg1bFCEAPEVuzJ4qXqKVQPuqTZ8p3RMjs=
+github.com/bootswithdefer/libdns-infoblox v1.0.6/go.mod h1:/98mdNH+dT1jkd3VESsL35ccI9zBw7IVfQ09EU/bI8I=
 github.com/caddyserver/caddy/v2 v2.10.2 h1:g/gTYjGMD0dec+UgMw8SnfmJ3I9+M2TdvoRL/Ovu6U8=
 github.com/caddyserver/caddy/v2 v2.10.2/go.mod h1:TXLQHx+ev4HDpkO6PnVVHUbL6OXt6Dfe7VcIBdQnPL0=
 github.com/caddyserver/certmagic v0.25.1 h1:4sIKKbOt5pg6+sL7tEwymE1x2bj6CHr80da1CRRIPbY=
