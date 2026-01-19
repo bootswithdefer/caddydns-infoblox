@@ -37,6 +37,7 @@ func (p *Provider) Provision(ctx caddy.Context) error {
 		zap.String("version", p.Provider.Version),
 		zap.String("username", p.Provider.Username))
 
+	p.Provider.SetLogger(p.logger)
 	return nil
 }
 
