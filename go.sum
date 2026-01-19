@@ -2,8 +2,8 @@ github.com/Masterminds/semver/v3 v3.4.0 h1:Zog+i5UMtVoCU8oKka5P7i9q9HgrJeGzI9SA1
 github.com/Masterminds/semver/v3 v3.4.0/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
-github.com/bootswithdefer/libdns-infoblox v1.0.2 h1:tQQkdQ+jadACa/5wCm4vdeznro7f9ULYrNRpkWvAaQ4=
-github.com/bootswithdefer/libdns-infoblox v1.0.2/go.mod h1:EovKVDj4O8JCKy+BXrHKZIcY4lRiqmyy8FDWJUbHOe0=
+github.com/bootswithdefer/libdns-infoblox v1.0.3 h1:hUOsUPQlUlQdfXQgWb07IubukWXoMNBtqtoyhp50dqs=
+github.com/bootswithdefer/libdns-infoblox v1.0.3/go.mod h1:/98mdNH+dT1jkd3VESsL35ccI9zBw7IVfQ09EU/bI8I=
 github.com/caddyserver/caddy/v2 v2.10.2 h1:g/gTYjGMD0dec+UgMw8SnfmJ3I9+M2TdvoRL/Ovu6U8=
 github.com/caddyserver/caddy/v2 v2.10.2/go.mod h1:TXLQHx+ev4HDpkO6PnVVHUbL6OXt6Dfe7VcIBdQnPL0=
 github.com/caddyserver/certmagic v0.25.1 h1:4sIKKbOt5pg6+sL7tEwymE1x2bj6CHr80da1CRRIPbY=
