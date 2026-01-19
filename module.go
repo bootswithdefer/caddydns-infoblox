@@ -41,6 +41,8 @@ func (p *Provider) Provision(ctx caddy.Context) error {
 }
 
 func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
+	caddy.Log().Info("parsing Infoblox configuration from Caddyfile")
+
 	for d.Next() {
 		if d.NextArg() {
 			return d.ArgErr()
@@ -80,10 +82,6 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 
 	if p.Provider.Host == "" || p.Provider.Version == "" || p.Provider.Username == "" || p.Provider.Password == "" {
 		return d.Err("missing config!")
-	}
-
-	if p.logger != nil {
-		p.logger.Info("Infoblox configuration parsed from Caddyfile")
 	}
 
 	return nil
