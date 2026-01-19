@@ -15,7 +15,7 @@ type Provider struct {
 func (Provider) CaddyModule() caddy.ModuleInfo {
 	return caddy.ModuleInfo{
 		ID:  "dns.providers.infoblox",
-		New: func() caddy.Module { return &Provider{new(infoblox.Provider)} },
+		New: func() caddy.Module { return &Provider{Provider: new(infoblox.Provider)} },
 	}
 }
 
