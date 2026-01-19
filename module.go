@@ -1,7 +1,7 @@
 package infoblox
 
 import (
-	infoblox "github.com/JRoy/libdns-infoblox"
+	infoblox "github.com/bootswithdefer/libdns-infoblox"
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 )
